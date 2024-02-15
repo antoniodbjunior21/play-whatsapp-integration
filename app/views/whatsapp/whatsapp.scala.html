@@ -1,0 +1,19 @@
+@()
+@js = {
+    <script src="@routes.Assets.versioned("js/whatsapp/whatsapp.js")"></script>
+    <script type="text/javascript">
+            "use strict";
+
+            jQuery(document).ready(function () {
+                Whatsapp.init();
+            });
+    </script>
+}
+@css = {
+
+}
+@template.main("Whatsapp", js, css, "menu-whatsapp") {
+    <div class="pagetitle">
+        <h1>Whatsapp</h1>
+    </div>
+}
