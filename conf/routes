@@ -11,18 +11,9 @@ GET         /create                                 controllers.Acesso.create()
 GET         /logout                                 controllers.Acesso.logout()
 GET         /configuracoes                          controllers.Configuracoes.abrirPainelConfiguracoes()
 POST        /configuracoes/salvar                   controllers.Configuracoes.salvar()
-GET         /facebook                               controllers.FacebookResources.abrirPainelIntegracao()
-GET         /facebook/webhook                       controllers.FacebookResources.validacaoWebhook()
-POST        /facebook/webhook                       controllers.FacebookResources.webhook()
-GET         /facebook/webhook/recebidos             controllers.FacebookResources.recebidos()
-GET         /facebook/webhook/excluir               controllers.FacebookResources.excluir()
-GET         /facebook/webhook/excluir/todos         controllers.FacebookResources.excluirTodos()
-GET         /facebook/pages                         controllers.FacebookResources.pages()
-GET         /facebook/subscribe                     controllers.FacebookResources.startPageSubscription()
-GET         /facebook/subscription                  controllers.FacebookResources.requestPageSubscriptionInfo()
-GET         /facebook/user                          controllers.FacebookResources.user()
 
 # Facebook
+GET         /whatsapp                               controllers.Whatsapp.inicio()
 
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file                           controllers.Assets.versioned(path="/public", file: Asset)
